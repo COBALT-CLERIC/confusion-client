@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Confusion Pulse</title>
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+</head>
+
+<body ng-app="app">
+
+  <ion-pane>
+      <ion-content>
+        <div ui-view></div>
+      </ion-content>
+    </ion-pane>
+
+
+  <!-- components -->
+  <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+  <script src="bower_components/socket.io-client/socket.io.js"></script>
+
+  <!-- angular -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <!-- students -->
+  <script src="App/Student/studentCtrl.js"></script>
+  <script src="App/Student/studentFactory.js"></script>
+
+  <!-- teacher -->
+  <script src="teacher.js"></script>
+  <script src="App/Teacher/teacherCtrl.js"></script>
+  <script src="App/Teacher/teacherFactory.js"></script>
+
+  <!-- auth  -->
+  <script src="App/Auth/authCtrl.js"></script>
+  <script src="App/Auth/authFactory.js"></script>
+
+  <!-- app.js -->
+  <script src="app.js"></script>
+  <script src="services.js"></script>
+
+</body>
+</html>
